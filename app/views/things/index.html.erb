@@ -1,2 +1,21 @@
-<h1>Things#index</h1>
-<p>Find me in app/views/things/index.html.erb</p>
+<p>
+  <%= link_to 'Add a thing', new_thing_path, class: "btn btn-primary" %>
+</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @things.each do |thing| %>
+      <tr>
+        <td><%= thing.name %></td>
+        <td><%= thing.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
