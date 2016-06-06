@@ -19,6 +19,8 @@ gem "trailblazer-rails"
 gem "trailblazer-loader"
 gem "reform", "~> 2.1.0"
 
+gem 'simple_form'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'minitest-rails-capybara'
