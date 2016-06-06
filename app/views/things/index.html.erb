@@ -7,15 +7,11 @@
     <tr>
       <th>Name</th>
       <th>Description</th>
+      <th>Actions</th>
     </tr>
   </thead>
 
   <tbody>
-    <% @things.each do |thing| %>
-      <tr>
-        <td><%= thing.name %></td>
-        <td><%= thing.description %></td>
-      </tr>
-    <% end %>
+    <%= concept("thing/cell/table_rows") %>
   </tbody>
 </table>

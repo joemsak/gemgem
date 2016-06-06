@@ -1,7 +1,7 @@
 <h1>Add a thing</h1>
 
 <%= simple_form_for @form do |f| %>
-  <%= f.input :name %>
+  <%= f.input :name, readonly: @form.readonly?(:name) %>
   <%= f.input :description %>
   <%= f.button :submit, "Save" %>
 <% end %>

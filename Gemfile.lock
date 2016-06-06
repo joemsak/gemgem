@@ -53,6 +53,15 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    cells (4.1.1)
+      tilt (>= 1.4, < 3)
+      uber (>= 0.0.9)
+    cells-erb (0.0.7)
+      cells (~> 4.0)
+      erbse (>= 0.0.2)
+    cells-rails (0.0.5)
+      actionpack (>= 3.0)
+      cells (>= 4.1)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -69,6 +78,7 @@ GEM
       declarative (~> 0.0.6)
       representable (>= 2.4.0, <= 3.1.0)
       uber
+    erbse (0.0.2)
     erubis (2.7.0)
     execjs (2.7.0)
     globalid (0.3.6)
@@ -209,6 +219,8 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 4.0.0.alpha3)
+  cells-erb
+  cells-rails
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails

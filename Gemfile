@@ -19,6 +19,9 @@ gem "trailblazer-rails"
 gem "trailblazer-loader"
 gem "reform", "~> 2.1.0"
 
+gem "cells-rails"
+gem "cells-erb"
+
 gem 'simple_form'
 
 group :development, :test do
